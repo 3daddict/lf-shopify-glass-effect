@@ -1,4 +1,6 @@
-
+body {
+  position: relative;
+}
 .preload {
   background-image: url("../img/glassImg1.png");
   position: absolute;
@@ -12,9 +14,12 @@
 
 /* Best to place a dark background here for the hero image */
 #target {
-  /* display: flex; */
-  position: relative;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
+  z-index: 100;
 }
 
 .card-img-top {
@@ -39,7 +44,7 @@
   transform: translate(-50%, -70%);
   transform-origin: center;
   overflow: hidden;
-  z-index: 999;
+  z-index: 200;
 }
 
 .crack {
