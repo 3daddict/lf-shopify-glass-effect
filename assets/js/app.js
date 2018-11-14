@@ -1,14 +1,14 @@
 $(document).ready(InitApp);
 
-let crackSize = 60;
-let crackRadius = 150;
+let crackSize = 100;
+let crackRadius = 300;
 
 function InitApp() {
   glassCrack();
   if ( $(window).width() > 768) {      
     document.getElementById("target-img").src="./assets/img/glassTexture.png";
-    crackSize = 60;
-    crackRadius = 150;
+    crackSize = 100;
+    crackRadius = 300;
   } 
   else {
     document.getElementById("target-img").src="./assets/img/glassTextureMd.png";
