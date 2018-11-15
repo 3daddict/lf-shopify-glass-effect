@@ -74,7 +74,8 @@ function explode() {
 }
 
 function removeElement(elementId) {
-  // Removes an element from the document
   var element = document.getElementById(elementId);
-  element.parentNode.removeChild(element);
+  setTimeout(() => {
+    element.parentNode.removeChild(element);
+  }, 1000);
 }
