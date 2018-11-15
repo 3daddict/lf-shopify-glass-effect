@@ -38,6 +38,7 @@ function glassCrack() {
     if (crackCount === 3) {
       $(".crack-container").remove();
       explode();
+      $('.title-container').remove();
       $(".explode-wrapper").fadeOut(2000);
 	}
 	if (crackCount === 4) {

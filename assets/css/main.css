@@ -12,6 +12,41 @@ body {
   z-index: -1;
 }
 
+.title-container {
+  position: absolute;
+  margin-top: 40vh;
+  width: 100%;
+  left: 0px;
+  text-align: center;
+  z-index: 999;
+}
+
+.title-container h1 {
+  font-size: 4.0rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px rgb(78, 78, 78);
+  margin-bottom: 15px;
+}
+
+.title-container p {
+  font-size: 1.5rem
+}
+
+.title-container .makeup-text {
+  color: #799a3d;
+  font-weight: bold;
+}
+
+.title-divider {
+  width: 78px;
+  height: 4px;
+  background: #799a3d;
+  clear: both;
+  margin: 0 auto 10px;
+  outline: 0;
+  border: 0;
+}
+
 /* Best to place a dark background here for the hero image */
 #target {
   display: flex;
@@ -94,4 +129,40 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media all and (min-width: 1024px) {
+  .title-container h1 {
+    font-size: 4.0rem
+  }
+  .title-container p {
+    font-size: 1.5rem
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .title-container h1 {
+    font-size: 3.5rem
+  }
+  .title-container p {
+    font-size: 1.25rem
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .title-container h1 {
+    font-size: 3.5rem
+  }
+  .title-container p {
+    font-size: 1.0rem
+  }
+}
+
+@media all and (max-width: 480px) {
+  .title-container h1 {
+    font-size: 3.5rem
+  }
+  .title-container p {
+    font-size: 1.0rem
+  }
 }
