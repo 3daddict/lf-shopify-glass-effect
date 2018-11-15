@@ -39,6 +39,7 @@ function glassCrack() {
       $(".crack-container").remove();
       explode();
       $('.title-container').remove();
+      removeElement('target');
       $(".explode-wrapper").fadeOut(2000);
 	}
 	if (crackCount === 4) {
@@ -70,4 +71,10 @@ function explode() {
     maxAngle: 360,
     gravity: true
   });
+}
+
+function removeElement(elementId) {
+  // Removes an element from the document
+  var element = document.getElementById(elementId);
+  element.parentNode.removeChild(element);
 }
